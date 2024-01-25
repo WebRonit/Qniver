@@ -20,10 +20,10 @@ app.get('/', (req, res) => {
   });
 
 const db = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "",
-        database: "user_logs"
+        host: "sql205.infinityfree.com",
+        user: "epiz_33252339",
+        password: "UbcndQ8HatPQ",
+        database: "epiz_33252339_user_logs"
 });
 
 
@@ -55,7 +55,7 @@ app.post('/signUp', async (req, res) => {
 
     catch(error){
         console.error(error);
-        res.status(500).send("Internal server error");
+        res.status(500).send("Internal server error vercel");
     }
 
    
