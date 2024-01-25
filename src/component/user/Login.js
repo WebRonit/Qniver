@@ -24,7 +24,7 @@ export default function Login() {
         setLoading(true);
 
         try{
-          const response = await axios.post('http://localhost:4000/Login', values);
+          const response = await axios.post('https://qniver.vercel.app/Login', values);
           if(response.status === 200){
             setErrTxt("Login succsefull");
             // const {token} = response.data;
