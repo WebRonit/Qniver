@@ -37,7 +37,7 @@ export default function SignUp() {
       const {confirmPassword, ...finalValues} = values
 
       try {
-        const response = await axios.post('http://localhost:4000/SignUp', finalValues);
+        const response = await axios.post('https://qniver.vercel.app/SignUp', finalValues);
 
         if (response.status === 200) {
           setErrTxt("Sign up successful");
