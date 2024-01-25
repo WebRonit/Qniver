@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+a{
+  color: black;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(165, 18, 218);
+  background: linear-gradient(
+    -45deg,
+    rgba(165, 18, 218, 1) 50%,
+    rgba(255, 0, 112, 1) 50%
+  );
+}
+.main-container{
+  display: flex;
+  border: none;
+  border-radius:20px;
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.508);
+}
+.main-container .side-cont{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    background-color: rgba(221, 221, 221, 0.805);   
+    backdrop-filter: blur(10px);
+}
+
+main .form-container{
+   
+    width: 330px;
+    padding:25px;
+    border: none;
+    border-radius:0 20px 20px 0px;
+    background-color: rgba(170, 170, 170, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+main .sign-up{
+  height: 520px;
+}
+
+main .login{
+   height: 440px;
+}
+
+main .password{
+  background-color: rgba(170, 170, 170, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5);
+}
+
+main .form-container .p1{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: aliceblue;
+}
+
+main .form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+main .form-container form label{
+    font-size: 18px;
+    margin-left: 3px;
+}
+
+main .form-container form input, button[type="submit"]{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 280px;
+    border: solid 2px rgba(231, 231, 231, 0.508);
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(211, 211, 211, 0.5);
+    color: #fff;
+    font-size: 17px;
+}
+
+main .form-container form button[type="submit"]{
+    width: 150px;
+    padding: 10px 0;
+    margin: 20px auto;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(55, 55, 238);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+main .form-container form button[type="submit"]:hover{
+    transform: scale(1.05);
+    border: solid 2px #fff;
+}
+
+main .form-container form button[type="submit"] p{
+    display: inline;
+}
+
+main .form-container form button[type="submit"] svg{
+    vertical-align: middle;
+    fill: #fff;
+    margin-left: 5px;
+}
+.p2{
+  text-align: center;
+  font-size: 15px;
+  color: aliceblue;
+  margin-top: 20px;
+}
+.p3{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.spinner {
+   display: inline-block;
+   vertical-align: middle;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   border: 3px solid;
+   border-color: #dbdcef;
+   border-right-color:  rgb(55, 55, 238);
+   animation: spinner-d3wgkg .7s infinite linear;
+}
+
+@keyframes spinner-d3wgkg {
+   to {
+      transform: rotate(1turn);
+   }
+}
+
+.err-txt{
+  width: 250px;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  color: red;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+@media screen and (max-width:705px){
+
+  .main-container .side-cont{
+    display: none;
+  }
+
+  .main-container .form-container{
+     border-radius: 20px;
+  }
+
+}

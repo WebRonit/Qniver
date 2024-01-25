@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body{
+     height: 150vh;
+} */
+
+#overlay{
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(29, 29, 29, 0.9);
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(221, 221, 221, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 5px rgba(51, 51, 51, 0.5);
+    z-index: 2;
+}
+
+nav p{
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav div{
+    float: right;
+    margin-right: 20px;
+}
+
+nav div a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 15px;
+    color: black;
+    font-weight: bold;
+    transition: color .3s;
+}
+
+nav div a:hover{
+    color: blue;
+    border-bottom: solid 2px blue;
+}
+
+nav div button{
+    display: none;
+    vertical-align: middle;
+    background: none;
+    border: none;
+    height: 32px;
+    cursor: pointer;
+}
+
+#menu{
+    position: fixed;
+    height: calc(100vh - 50px);
+    width: 300px;
+    background-color: rgb(215, 215, 215);
+    z-index: 1;
+    transition: transform .35s;
+}
+
+#menu div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#menu div a{
+    width: 100px;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: solid 2px transparent;
+    transition:  color .3s;
+}
+
+#menu div a:hover{
+    color: blue;
+    border-bottom: solid 2px blue;
+}
+
+
+
+@media screen and (max-width:660px){
+
+        .side-btn{
+            display: none;
+        }
+
+        nav div button{
+            display: block;
+        }
+
+}
