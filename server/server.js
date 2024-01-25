@@ -3,11 +3,11 @@ const mysql = require("mysql2");
 const cors = require("cors");
 // const jwt = require('jsonwebtoken');
 
-const PORT = 4000
+const PORT = process.env.PORT || 4000;
 const app = express();
 
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://qniver.vercel.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
