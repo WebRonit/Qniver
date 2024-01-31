@@ -1,25 +1,30 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './home/Home.jsx';
 import Dashboard from './dashboard/Dashboard.jsx';
-import Login from './component/user/Login';
-import Forgot from './component/user/forgot.js'
-import SignUp from './component/user/SignUp.js'
+import Login from './component/user/Login.jsx'
+import SignUp from './component/user/SignUp.jsx'
+import Forgot from './component/user/Forgot.jsx'
+
 import './App.css';
 
 
-function App() {
+function App(){
 
   return (
     <>
-    <Router>
+   
+     <Router>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Login' element={<Login/>}/>
+        <Route path='/SignUp' element={<SignUp/>}/>
+        <Route path='/Forgot-password' element={<Forgot/>}/>
         <Route path='/Dashboard' element={<Dashboard/>}/>
-        <Route path="/Login" element={<Login/>}/>
-        <Route path="/SignUp" element={<SignUp/>}/>
-        <Route path="/Forgot-Password" element={<Forgot/>}/>
+   
       </Routes>
-    </Router>
+     </Router>
+  
     </>
   );
 }

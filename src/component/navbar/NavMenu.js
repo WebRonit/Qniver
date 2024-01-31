@@ -45,7 +45,7 @@ export default function NavMenu(props) {
   
       <div id="menu" style={{transform: translate, boxShadow: shadow}}>
         <div>
-          <Link to="#">Dashboard</Link>
+          <Link to="/Dashboard">Dashboard</Link>
           <Link to="/Login">Login</Link>
           <Link to="/SignUp">Sign Up</Link>
           <Link to="#">About</Link>

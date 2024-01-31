@@ -7,7 +7,7 @@
 }
 
 a{
-  color: black;
+  color: black; 
 }
 
 main {
@@ -16,7 +16,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(165, 18, 218);
   background: linear-gradient(
     -45deg,
     rgba(165, 18, 218, 1) 50%,
@@ -44,11 +43,13 @@ main .form-container{
    
     width: 330px;
     padding:25px;
+    padding-top: 0;
     border: none;
     border-radius:0 20px 20px 0px;
     background-color: rgba(170, 170, 170, 0.7);
     backdrop-filter: blur(10px);
 }
+
 
 main .sign-up{
   height: 520px;
@@ -65,7 +66,7 @@ main .password{
 }
 
 main .form-container .p1{
-    margin-bottom: 20px;
+    margin: 20px 0;
     font-size: 20px;
     font-weight: bold;
     text-align: center;

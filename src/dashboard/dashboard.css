@@ -1,0 +1,112 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(239, 239, 239);
+}
+
+.main .main-cont{
+    height: 500px;
+    width: 700px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgb(249, 249, 249);
+}
+
+.main .main-cont .p1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main .main-cont .account-cont{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+   
+}
+
+table{
+    /* display: block; */
+    width: 100%;
+}
+
+table, th , td{
+    border-collapse: collapse;
+    text-align: right;
+    padding: 5px 0;
+}
+
+th{
+    padding-right: 25px;
+}
+
+td{
+    width: 50%;
+    text-align: left;
+    padding-left: 25px;
+    color: blue;
+}
+
+
+.info-cont{
+    display: none;
+}
+
+.info-cont label{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.info-cont p{
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.main .main-cont .account-cont button{
+    width: 100px;
+    margin: 0px auto;
+    margin-top: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(60, 60, 240);
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:430px){
+
+    .main .main-cont{
+        width: 100%;
+        box-shadow: none;
+    }
+     table{
+        display: none;
+    }
+
+    .info-cont{
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width:705px){
+
+    .main .main-cont{
+        width: 95%;
+    }
+    /* .main .main-cont .account-cont{
+        width: 70%;
+    } */
+}
